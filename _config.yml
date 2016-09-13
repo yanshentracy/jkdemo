@@ -34,7 +34,7 @@ kramdown:
 #
 owner:
   name: "Shen Yan"
-  avatar: HelloWorld.png
+  avatar: "HelloWorld.png"
   job: 
   bio: "Programmer & Dreamer"
   email: "yanshentracy@gmail.com"
