@@ -6,7 +6,7 @@
 title: Gillbira
 email:
 description: A simple and awesome blog theme powered by jekyll.
-url: yanshentracy.github.com/jkdemo# the base hostname & protocol for yoursite
+url: yanshentracy.github.com/jkdemo      # the base hostname & protocol for yoursite
 baseurl: /jkdemo
 #
 ###################################
