@@ -4,22 +4,21 @@
   {% if author.avatar %}
   <img src="{{ site.url }}/img/{{ author.avatar }}" alt="" class="avatar">
   {% endif %}
-  <a href="{{ site.url }}/" class="author_name">{{ author.name }}</a>
+  <a href="{{ site.url }}/" class="author_name" style="text-transform:uppercase;">{{ author.name }}</a>
   <span class="author_job">{{ author.job }}</span>
   <span class="author_bio mbm">{{ author.bio }}</span>
   <nav class="nav">
     <ul class="nav-list">
-      <li class="nav-item">
-        <a href="{{ site.url }}/">Home</a>
-        <span>/</span>
-      </li>
+      <p><li class="nav-item">
+        <a href="{{ site.url }}/" style="text-transform:uppercase;">HOME</a>
+      </li></p>
       {% for page in site.pages %} {% if page.title %}
-      <li class="nav-item">
-        <a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a>
+      <p><li class="nav-item">
+        <a href="{{ site.url }}{{ page.url }}" style="text-transform:uppercase;">{{ page.title }}</a>
         {% unless forloop.last %}
-         <span>/</span>
+         <!--<span>/</span>-->
         {% endunless %}
-      </li>
+      </li></p>
       {% endif %} {% endfor %}
     </ul>
   </nav>
