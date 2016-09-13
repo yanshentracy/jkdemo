@@ -33,14 +33,14 @@ kramdown:
 ####################################
 #
 owner:
-  name: Shen Yan
+  name: "Shen Yan"
   avatar: leonids-logo.png
   job: 
   bio: "A simple and awesome blog theme powered by jekyll."
-  email:yanshentracy@gmail.com
+  email: "yanshentracy@gmail.com"
   disqus-shortname:
-  twitter: yuaner
-  facebook: GillbiraYan
+  twitter: "yuaner"
+  facebook: "GillbiraYan"
   google:
     plus: #username
     analytics:
