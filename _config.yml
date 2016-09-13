@@ -35,7 +35,7 @@ kramdown:
 owner:
   name: Shen Yan
   avatar: leonids-logo.png
-  #job: ""
+  job: 
   bio: "A simple and awesome blog theme powered by jekyll."
   email:yanshentracy@gmail.com
   disqus-shortname:
