@@ -26,8 +26,11 @@ permalink: /publications/
     {% endif %}
     {% endunless %}
     <li>
-      <div style="width:60px;float:left;">{{ post.date | date: "%b %-d" }}</div> <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
+      <!--<div style="width:60px;float:left;"></div>--> <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a><br/>
+	   {{ post.authors }}<br/>{{ post.pub }} {{ post.status}}
+	  </li>
+    
+	{% endfor %}
     </ul>
 
   </div>
