@@ -8,7 +8,7 @@ authors: S. Pan, <strong>S. Yan</strong>, and W.-T. Zhu
 pub: 21st Australasian Conference on Information Security and Privacy (ACISP'16)
 page: vol. 9723, pp. 446-453
 status:
-categories: [tutorial]
+categories: [post]
 comments: true
 ---
 <big><strong>Abstract:</strong></big><br>

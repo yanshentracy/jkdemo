@@ -7,11 +7,13 @@ permalink: /publications/
 <div class="archive">
   <div class="timeline" id="timeline">
     {% for post in site.posts %}
-    {% unless post.next %}
+	{% capture type %}{{ post.categories }}{% endcapture %}
+	{% if type == "post" %}
+    {% unless post.next %}	
     <div class="archive-title">
       <h4 class="archive-year">{{ post.date | date: '%Y' }}</h4>
     </div>
-
+    
     <ul>
     {% else %}
       {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
@@ -25,11 +27,12 @@ permalink: /publications/
     <ul>
     {% endif %}
     {% endunless %}
+	
     <li>
       <!--<div style="width:60px;float:left;"></div>--> <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a><br/>
-	   {{ post.authors }}<br/>{{ post.pub }} {{ post.status}}
+	   {{ post.authors }}<br/>{{ post.pub }} {{ post.status }}
 	  </li>
-    
+	{% endif %}  
 	{% endfor %}
     </ul>
 

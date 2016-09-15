@@ -1,0 +1,27 @@
+---
+layout: default
+title:  Projects
+permalink: /projects/
+---
+<div class="prj-list">
+{% for prj in site.posts %}
+<div class="prj">
+  {% capture type %}{{ prj.categories }}{% endcapture %}
+  {% if type == "project" %} 
+  <div>
+    <a class="prj-item-title" href="{{ site.url }}{{ prj.url }}"><h4>{{ prj.title }}</h4></a>
+	<table class="prj-details" cols=2>  
+	 <tr>
+	 <td>{{ prj.excerpt }}</td>
+	 <td>
+	 <video width="200" height="100" controls="controls">
+	 <source src="{{site.url}}/file/{{prj.file}}" type="video/mwv"/>
+	 </video>
+	 </td>
+	 </tr> 
+	</table>
+  </div>
+   {% endif %} 
+</div>   
+{% endfor %}
+</div>
