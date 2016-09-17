@@ -14,9 +14,11 @@ permalink: /projects/
 	 <tr>
 	 <td>{{ prj.excerpt }}</td>
 	 <td>
+	 {% if prj.file %}
 	 <video width="200" height="100" controls="controls">
-	 <source src="{{site.url}}/file/{{prj.file}}" type="video/mwv"/>
+	 <source src="{{site.url}}/file/{{prj.file}}" type="video/wmv"/>
 	 </video>
+	 {% endif %}
 	 </td>
 	 </tr> 
 	</table>
