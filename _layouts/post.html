@@ -2,13 +2,18 @@
 layout: default
 ---
 {% if page.link %}
-<a class="btn" href= "{{ page.link }}" style="background-color:#1E90FF">
+<a class="reddit btn" href= "{{ page.link }}" >
   LINK
 </a>
 {%endif %}
 {% if page.file %}
 <a class="btn" href= "{{ site.url }}/file/{{page.file}}" >
   PDF
+</a>
+{%endif%}
+{% if page.mv %}
+<a class="google-plus btn" href= "{{ site.url }}/file/{{page.mv}}" >
+  VIDEO
 </a>
 {%endif%}
 {% if page.image.feature %}
