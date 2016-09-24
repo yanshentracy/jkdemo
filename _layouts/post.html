@@ -16,22 +16,6 @@ layout: default
   VIDEO
 </a>
 {%endif%}
-{% if page.image.feature %}
-<div class="post-image-feature">
-  <img class="feature-image" src=
-  {% if page.image.feature contains 'https' or page.image.feature contains 'http' %}
-  "{{ page.image.feature }}"
-  {% else %}
-  "{{ site.url }}/img/{{ page.image.feature }}"
-  {% endif %}
-  alt="{{ page.title }} feature image">
-
-  {% if page.image.credit %}
-  <span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
-  {% endif %}
-</div><!-- /.image-wrap -->
-{% endif %}
-
 
 <div id="post">
   <header class="post-header">
@@ -50,7 +34,32 @@ layout: default
     {{ content }}
   </article>
 </div>
+{% if page.image %}
+<div class="post-image-feature">
+	<div style="height: 250px;width:330px; float:left">
+	<img class"feature-image" style=" height: 150px;width:300px;" src="{{site.url}}/img/{{page.image1}}"/>
+	</div>
+	<div style="height: 250px;width:330px; float:left">
+	<img class"feature-image" style=" height: 150px;width:300px;" src="{{site.url}}/img/{{page.image2}}"/>
+	</div>
+  <!-- <img class="feature-image" src
+  {% if page.image.feature contains 'https' or page.image.feature contains 'http' %}
+  "{{ page.image.feature }}"
+  {% else %}
+  "{{ site.url }}/img/{{ page.image.feature }}"
+  {% endif %}
+  alt="{{ page.title }} feature image">
 
+  {% if page.image.credit %}
+  <span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
+  {% endif %} -->
+</div><!-- /.image-wrap -->
+{% endif %}
+{% if page.mv %}
+<center><div>
+<iframe width="560" height="350" src="{{page.mv}}" frameborder="0" allowfullscreen></iframe>
+</div></center>
+{% endif %}
 <!-- <div class="share-buttons">
   <h6>Share on: </h6>
   <ul>
@@ -76,3 +85,5 @@ layout: default
 <div id="disqus_thread"></div>
 {% include disqus.html %}
 {% endif %}
+</div>
+ <div style="clear:both"></div>

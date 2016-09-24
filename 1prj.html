@@ -15,9 +15,10 @@ permalink: /projects/
 	 <td>{{ prj.excerpt }}</td>
 	 <td>
 	 {% if prj.mv %}
-	 <video width="200" height="100" controls="controls">
-	 <source src="{{site.url}}/file/{{prj.file}}" type="video/wmv"/>
-	 </video>
+	 <iframe width="300" height="200" src="{{prj.mv}}" frameborder="0" allowfullscreen></iframe>
+	 {% endif %}
+	 {% if prj.image %}
+	 <img src="{{site.url}}/img/{{prj.image1}}" width="650" height="300"/>
 	 {% endif %}
 	 </td>
 	 </tr> 
