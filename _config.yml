@@ -39,8 +39,8 @@ owner:
   bio: "Personal site"
   email: "yanshentracy@gmail.com"
   disqus-shortname:
-  twitter: "yuaner"
-  facebook: "GillbiraYan"
+  twitter:
+  facebook: 
   google:
     plus: #username
     analytics:
