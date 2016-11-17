@@ -20,13 +20,13 @@ layout: default
 <div id="post">
   <header class="post-header">
     <!--<h1 title="{{ page.title }}">{{ page.title }}</h1>-->
-    <span class="post-meta">
+<!--     <span class="post-meta">
       <span class="post-date">
         {{ page.date | date: "%-d %b %Y" | upcase }}
       </span>
       •
       {% include read_time.html %}
-    </span>
+    </span> -->
 
   </header>
 
@@ -35,12 +35,12 @@ layout: default
   </article>
 </div>
 {% if page.image %}
-<div class="post-image-feature">
-	<div style="height: 250px;width:330px; float:left">
-	<img class"feature-image" style=" height: 150px;width:300px;" src="{{site.url}}/img/{{page.image1}}"/>
+<div class="post-image-feature" style="margin:0px">
+	<div style="height: 250px;width:400px; float:left">
+	<center><img class"feature-image" style=" height: 200px;width:350px;" src="{{site.url}}/img/{{page.image1}}"/></center>
 	</div>
-	<div style="height: 250px;width:330px; float:left">
-	<img class"feature-image" style=" height: 150px;width:300px;" src="{{site.url}}/img/{{page.image2}}"/>
+	<div style="height: 250px;width:400px; float:left">
+	<center><img class"feature-image" style=" height: 200px;width:350px;" src="{{site.url}}/img/{{page.image2}}"/></center>
 	</div>
   <!-- <img class="feature-image" src
   {% if page.image.feature contains 'https' or page.image.feature contains 'http' %}
